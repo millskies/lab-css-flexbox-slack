@@ -9,29 +9,6 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-
-/* 
-.logo {
-    width: 100px;
-}
-
-
-/* .topButtons div {
-    flex-direction: row;
-}
-*/
-
-div {
-    border: 1px solid blue;
-    width: auto;
-   
-}
-nav {
-    border: 5px solid red;
-    width: 100vw;
-}
-
-
 .topButtons button{
     margin-left: 30px;
     background-color: #540B51;
@@ -49,20 +26,19 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin: 0;
 }
 
 nav#top-bar{
-    width: 825px;
+    width: auto;
 }
+
 
 body{
     background-color: #540B51;
-    width: 825px;
+    width: 100%;
 }
-body>header>div>h1 {
-    color: white;
 
-}
 
 body>header>div {
     background-color: #540B51;
@@ -91,18 +67,24 @@ body>header>div>div>button {
 
 .greatTeamwork {
     background-color: #540B51;
-    
+}
 
+.greatTeamwork h1{
+    text-align: center;
+    text-justify: auto;
+    font-weight: lighter;
+    font-size: 250%;
+    color: white;
 }
 .responsive {
-    max-width: 200vw;
+    max-width: 96%;
 }
 
 
 .signButton {
     background-color: white;
     color: #540B51;
-    font-weight: 500;
+    font-weight: bolder;
 }
 
 .googleButton {
@@ -126,6 +108,7 @@ body>header>div>div>button {
     color: white;
     margin-left: 85px;
 }
+
 body>header>div p>span {
     color: #ECB12F;
 }
@@ -144,29 +127,17 @@ body {
     display: block;
     font-size: 16px;
 } 
-  
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 14px; 
-    }
-  }
-  
-@media (max-width: 769px) {
-    body {
-        word-wrap: break-word;
-    }
-    
+
+.mainCompanies img{
+height: 60px;
+margin: 3px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-   body {
-    background-color: red;
-   } 
-}
-
-.main div{
-display: flex;
-flex-wrap: wrap;
+.mainCompanies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .main img{
@@ -176,4 +147,45 @@ flex-wrap: wrap;
 
 body>main>section{
     background-color: #F3EAE2;
+    width: 100%;
+    justify-content: center;
 }
+
+body>main>section>p{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* @media (max-width: 768px) {
+    {
+
+    }
+}
+*/
+
+@media screen and (max-width: 768px) {
+    .responsive {
+      width: 100%;
+      height: auto; 
+    }
+  } 
+  
+
+@media (min-width: 769px) and (max-width: 1024px) {
+   body {
+    background-color: red;
+   } 
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
