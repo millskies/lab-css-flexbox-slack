@@ -21,18 +21,14 @@ footer links grey: #454245
     width: 30px;
 }
 
-#top-bar{
+.top-bar{
     background-color:#540B51 ;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-evenly;
+    padding: 1rem 0;
     margin: 0;
+    width: 100%;
 }
-
-nav#top-bar{
-    width: auto;
-}
-
 
 body{
     background-color: #540B51;
@@ -76,10 +72,15 @@ body>header>div>div>button {
     font-size: 250%;
     color: white;
 }
+
 .responsive {
     max-width: 96%;
 }
 
+.responsive2 {
+    max-width: 96%;
+    text-align: right;
+}
 
 .signButton {
     background-color: white;
@@ -99,7 +100,7 @@ body>header>div>div>button {
     height: 23px;
     background-color: white;
     padding: 8px 9px;
-    border-radius: 1px;
+    border-radius: 0.2rem;
     align-items: left;
     justify-items: left;
 }
@@ -129,8 +130,8 @@ body {
 } 
 
 .mainCompanies img{
-height: 60px;
-margin: 3px;
+    height: 2em;
+    margin-bottom: 1em;
 }
 
 .mainCompanies{
@@ -138,11 +139,6 @@ margin: 3px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.main img{
-    height: 30%;
-    width: 30%;
 }
 
 body>main>section{
@@ -154,16 +150,93 @@ body>main>section{
 body>main>section>p{
     text-transform: uppercase;
     font-weight: bolder;
-    padding: 80px 0;
+    padding: 40px 0;
     text-align: center;
+    font-size: 70%;
+}
+
+body>main section>div>img{
+    justify-content: right;
 }
 
 .titulo {
-    font-size: 1em;
+    font-size: 1.2rem;
     font-weight: bolder;
-    text-align: center;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
 }
 
+.description {
+    font-size: 0.9rem;
+    padding-left: 0.9rem;
+}
+
+.link {
+    font-size: 0.7rem;
+    padding-left: 0.9rem;
+    color: #2E71A6;
+    padding: 0.5rem 0;
+    text-decoration-style: none;
+}
+
+.section3 {
+    background-color: white;
+    padding: 2rem 0;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.description3 {
+    text-transform: lowercase;
+    padding: 5rem;
+}
+
+.middleButton1 {
+    padding: 1rem;
+    background-color: #540B51;
+    color: #540B51;
+    border: none;
+    color: white;
+    margin: 1 rem;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+} 
+
+.middleButton2 {
+    padding: 1rem;
+    background-color: white;
+    color: #540B51;
+    border-color: solid #540B51;
+    box-shadow: none;
+    border-radius: 0.1rem;
+    margin: 1 rem;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+} 
+
+.buttons2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.numbers span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color:#540B51;
+    justify-content: center;
+    align-items: center;
+}
+.section4 {
+    background-color: #540B51;
+
+}
+
+.footer{
+    background-color: white;
+}
 /* @media (max-width: 768px) {
     {
 
@@ -185,7 +258,7 @@ body>main>section>p{
    } 
 }
 
-/* *{
+*{
     margin: 0;
     padding: 0;
-} */
+}
